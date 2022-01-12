@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+</head>
+<style>
+    h3{text-align: center;} /* 태그 */
+    .blue{color:blue;} /* 특정 Class */
+    li h1{color:green;} /* 자식 태그 */
+    #sex{color:orangered;}   /* 특정 ID */
+    *{font-style: italic;} /* 전부 다 */
+    aside h1~p{color:magenta;}
+    aside h1+p{text-align: center;}
+    aside h1{text-align: right;}
+    
+
+
+    a:link{color: skyblue;}
+    a:hover{color: slateblue; text-shadow: 4px 4px 10px deeppink;}
+    a:active{color: springgreen;}
+
+    section h1:nth-child(2){color: gold;}
+    section h1:nth-last-child(2){color: green;}
+</style>
+<body>
+    <p>hello</p>
+    <p id="sex">sibal</p>
+    <p>sex</p>
+    <p class="blue">sex</p>
+    <p>qnpfrfjiw</p>
+    <ul>
+        <li>
+            <h1>hello sex</h1>
+        </li>
+    </ul>
+
+    <hr>
+
+    <section>
+        1group
+        <b>b태그</b>
+        <span>span태그</span>
+        <div>div 태그</div>
+        <em>em태그</em>
+        
+    </section>
+    <section>
+        2group
+        <h1>h1태그</h1>
+        <h1>h1태그</h1>
+        <h1>h1태그</h1>
+        <h1>h1태그</h1>
+        <h1>h1태그</h1>
+        <h1>h1태그</h1>
+      
+        <aside>
+            <h1>h1태그</h1>
+            <p>p태그</p>
+            <p>p태그</p>
+        </aside>
+
+    </section>
+
+
+    <br><hr>
+    
+
+    <a href="https://www.naver.com" target="_blank">네이버</a>
+    <a href="https://www.namu.wiki" target="_blank">꺼무위키</a>
+    <a href="https://www.google.com"target="_blank" >google</a>
+    
+</body>
+</html>
