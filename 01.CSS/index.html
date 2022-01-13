@@ -16,7 +16,7 @@
     aside h1+p{text-align: center;}
     aside h1{text-align: right;}
     
-
+    
 
     a:link{color: skyblue;}
     a:hover{color: slateblue; text-shadow: 4px 4px 10px deeppink;}
@@ -24,6 +24,20 @@
 
     section h1:nth-child(2){color: gold;}
     section h1:nth-last-child(2){color: green;}
+
+
+
+    /* only */
+    h5:only-of-type{color: skyblue;}  /* 유일한 타입이면 적용. only-child는 유일한 태그일 때만 적용 */
+
+    /* 속성 선택자 
+    ^=이 들어가면 특정문구로 시작  
+    $=이 들어가면 특정문구로 끝나는 경우
+    *=이 들어가면 특정문구가 포함되어 있는 경우  */
+    p[id]{color: skyblue;}
+    [class]{color: hotpink;}
+
+    a[href="https://www.naver.com"]{color: hotpink; text-decoration: none;}
 </style>
 <body>
     <p>hello</p>
@@ -66,11 +80,150 @@
 
 
     <br><hr>
-    
-
+    <div style="font-size: 24px;">a Style</div>
     <a href="https://www.naver.com" target="_blank">네이버</a>
     <a href="https://www.namu.wiki" target="_blank">꺼무위키</a>
     <a href="https://www.google.com"target="_blank" >google</a>
+
+    <br>
+    <hr>
+    <div style="font-size: 24px;">only-of-type</div>
+    <p>sex</p>
+    <h5>only-of-type</h5>
+    <p>sex</p>
+
+    <br><hr>
+    <div style="font-size: 24px;">속성 선택자</div>
+    <p id="myName">Bamsaengki</p>
+    <b class="myName2">bamsaengki</b>
+    <em class="myName3">Bamsaengki</em>
+    <p class="myName4">bamsaengki</p>
+    <span class="myName5">bamsaengki</span>
+    <div>bamsaengki</div>
+    <br>
+    <a href="https://www.naver.com" name="sexx">Naver</a>
+
+    <br>
+    <hr>
+    <div style="font-size: 24px;">letter-spacing</div>
+    <p style="letter-spacing: 0px;">I Love Disney - 0</p>
+    <p style="letter-spacing: 10px;">I Love Disney - 10</p>
+    <p style="letter-spacing: 30px">I Love Disney - 30</p>
+
+
+    <br>
+    <hr>
+
+    <div style="font-size: 24px;">Word-Spacing</div>
+    <p style="word-spacing: 10px;">S E E E X</p>
+    <p style="word-spacing: 20px;">S E E E X</p>
+    <p style="word-spacing: 30px;">S E E E X</p>
+    <p style="word-spacing: 40px;">S E E E X</p>
+
+
+    <br>
+    <hr>
+    <div style="font-size: 24px; font-weight: bold;">Line-Height</div>
+    <p style="line-height: 0px;">SEEEEEX</p>
+    <p style="line-height: 10px;">SEEEEEX</p>
+    <p style="line-height: 20px;">SEEEEEX</p>
+    <p style="line-height: 30px;">SEEEEEX</p>
+    <br>
+    <hr>
+    <div style="font-weight: bold; font-size: 24px;">Direction</div>
+    <p style="direction: rtl;">SEEEEEEEEX</p>
+    <p style="direction:ltr">SEEEEEEEEX</p>
+    <br>
+    <hr>
     
+
+    <div style="font-size: 24px;font-weight: bold;">text-indent<br>
+        <div style=" width: 280px; background-color: skyblue;">
+            <p style="text-indent: 10px;">SEX!<br>YAS!</p>
+            <p style="text-indent: 20px;">SEX!<br>YAS!</p>
+            <p style="text-indent: 30px;">SEX!<br>YAS!</p>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div style="font-size: 24px; font-weight: bold;">text-decoration</div>
+        <p style="text-decoration: underline;">밑줄 긋기</p>
+        <p style="text-decoration: overline;">윗줄 긋기</p>
+        <p style="text-decoration: line-through;">가운데 줄 긋기</p>
+        <p style="text-decoration: underline overline;">밑줄 윗줄 긋기</p>
+        <p style="text-decoration: none;">줄 안 긋기</p>
+
+    <div style="font-size: 24px; font-weight: bold;">text-line style</div>
+        <p style="text-decoration: underline dashed;">밑줄 긋기 dashed</p>
+        <p style="text-decoration: overline dotted;">윗줄 긋기 dotted</p>
+        <p style="text-decoration: line-through double;">가운데 줄 긋기 double</p>
+        <p style="text-decoration: underline overline dashed;">밑줄 윗줄 긋기 dashed</p>
+        <p style="text-decoration: none;">줄 안 긋기</p>
+    
+    <div style="font-size: 24px; font-weight: bold;">text-line style - color</div>
+        <p style="text-decoration: underline dashed red;">밑줄 긋기 red</p>
+        <p style="text-decoration: overline dotted blue;">윗줄 긋기 blue</p>
+        <p style="text-decoration: line-through double hotpink;">가운데 줄 긋기 hotpink</p>
+        <p style="text-decoration: underline overline dashed yellow;">밑줄 윗줄 긋기 yellow</p>
+        <p style="text-decoration: none;">줄 안 긋기</p>
+
+        <!--text shadow 인자 =가로방향길이 세로방향길이 흐림의크기 그림자색 -->
+    <div style="font-size: 24px; font-weight: bold;">text-shadow</div>
+        <p style="text-shadow: 10px 10px skyblue;">Disney</p><br>
+        <p style="text-shadow: 2px 3px pink;">Disney</p>
+
+    <br>
+    <hr>
+
+    <div style="font-size: 24px; font-weight: bold;">Text-transform</div>
+        <p style="text-transform: uppercase;">Sex</p>
+        <p style="text-transform:lowercase">SEX</p>
+        <p style="text-transform: capitalize;">
+            joy out of the blue (out of the blue)
+            smiles inside of you (inside of you)
+            like a child again
+            with Mickey and friends
+            jump and shout and let it all out
+             
+            a sparkle's in your eyes (in your eyes)
+            you suddenly feel alive (your feeling alive)
+            cause happiness
+            the magic of
+            happiness is here</p><br><hr>
+
+
+    <div style="font-size: 24px; font-weight: bold;">font-variant</div>
+            <!-- 대문자를 작게 표시 -->
+        <p style="font-variant: small-caps;">disney</p>
+        <p style="font-variant: normal;">everdevel</p>
+        <p style="font-variant: small-caps;">marvel</p>
+            <br><hr>
+    
+    
+    <div style="font-size: 24px; font-weight: bold;">width, hegiht</div>
+        <p style="background-color: skyblue;">Disney</p>
+        <br>
+        <p style="background-color: skyblue;width:100px">Disney</p>
+        <br>
+        <p style="background-color: slateblue;">Disney</p>
+        <p style="background-color: slateblue;height:100px">Disney</p>
+        <br>
+        <p style="background-color: slateblue;width: 100px;height: 100px;">Disney</p>
+            <br><hr>
+    <div style="font-size: 24px;font-weight: bold;">overflow</div>
+        <p style="background-color: skyblue;width: 100px;height: 100px;overflow: visible;">Disney Disney Disney Disney DisneyDisney Disney Disney Disney Disney Disney</p>
+        <p style="background-color: skyblue;width: 100px;height: 100px;overflow: hidden;">Disney Disney Disney Disney DisneyDisney Disney Disney Disney Disney Disney</p>
+        <p style="background-color: skyblue;width: 100px;height: 100px;overflow: scroll;">Disney Disney Disney Disney DisneyDisney Disney Disney Disney Disney Disney</p>
+        <br><hr>
+   
+    <div style="font-size: 24px;font-weight: bold;">white space</div>
+        <!-- normal -->
+        <p>에버디벨에           방문해주셔서 감사합니다.</p>
+        <!-- pre -->
+        <p style="white-space: pre; width: 180px;height: 100px;background-color: skyblue;">에버디벨에           방문해주셔서 감사합니다.</p>
+        <!-- pre-wrap -->
+        <p style="white-space: pre-wrap; width: 180px;height: 100px;background-color: skyblue;">에버디벨에           방문해주셔서 감사합니다.</p>
+        <!-- pre-line -->
+        <p style="white-space: pre-line; width: 180px;height: 100px;background-color: skyblue;">에버디벨에           방문해주셔서 감사합니다.</p>
 </body>
 </html>
