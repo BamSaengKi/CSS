@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 단위</title>
+    <style>
+        html{font-size: 10px;}
+        .one{font: size 1rem;}
+        .two{font-size: 2rem;}
+        .three{font-size: 3rem;}
+
+        .twoo{font-size: 3em;}
+        .threeee{font-size: 3rem;}
+    </style>
+    <script>
+        setInterval(function() {
+                document.getElementsByTagName('html')[0].style.fontsize='20px';
+        }, 5000);
+    </script>
+</head>
+<body>
+    <p class="one">Everdevel</p>
+    <p class="two">Everdevel</p>
+    <p class="three">Everdevel</p>
+
+    <br>
+    <div class="threeee">
+        <p class="twoo">Everdevel-3em</p>
+    </div>
+    <br>
+    <div style="width: 500px;height: 30px; background: skyblue;"></div>
+    <div style="width: 100%;height: 30px; background: skyblue;"></div>
+        <div style="width : 500px;display: flex;flex-direction: row;">
+             <div style="width: 50%;height: 30px; background: skyblue;"></div>
+             <div style="width: 50%;height: 30px;background: hotpink;"></div>
+        </div>
+</body>
+</html>
